@@ -17,11 +17,12 @@ public class SalariedEmployee extends Employee {
         // Call the superclass constructor
         super(num, lName, fName, dept);
         // Set the eSalary field.
-        eSalary = salary;
+        this.eSalary = salary;
     }
     
     // no-arg constructor
-    public SalariedEmployee() {
+    public SalariedEmployee(String num, String lName, String fName, String dept) {
+        super(num, lName, fName, dept);
     }
 
     // Method toString(): represents the state of an object
