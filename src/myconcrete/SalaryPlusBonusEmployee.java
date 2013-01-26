@@ -12,10 +12,10 @@ public class SalaryPlusBonusEmployee extends SalariedEmployee {
     
     // Constructor: Accepts salaried employee bonus, along with the SalariedEmployee
     // inherited field salary and the Employee inherited fields.
-    public SalaryPlusBonusEmployee(double eBonus, double salary, String num, 
+    public SalaryPlusBonusEmployee(double bonus, double salary, String num, 
             String lName, String fName, String dept) {
         super(salary, num, lName, fName, dept);
-        this.eBonus = eBonus;
+        this.eBonus = bonus;
     }
     
     // Constructor: Accepts only the Employee inherited fields.
@@ -32,19 +32,19 @@ public class SalaryPlusBonusEmployee extends SalariedEmployee {
 
         String salaryPlusBonusEmployee;
         salaryPlusBonusEmployee = super.toString() 
-         + "\n  Salaried Employee Bonus: $" + dollar.format(eBonus);
+         + "\n   Salaried Employee Bonus: $" + dollar.format(eBonus);
         // Return the string.
         return salaryPlusBonusEmployee;
     }
     
     // Accessor & Mutator methods:
-    public double geteBonus(double salary, double bonus) {
-        bonus = salary * .05;
+    public double geteBonus() {
         return eBonus;
     }
 
     public void seteBonus(double eBonus) {
         this.eBonus = eBonus;
     }
+   
     
 }

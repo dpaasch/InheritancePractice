@@ -34,15 +34,17 @@ public class Startup {
             // Get the Salaried employee information
             System.out.println("Employee Annual Salary: ");
             double salary = input.nextDouble();
+            
+            // Create a SalaryPlusBonusEmployee object
+            double bonus = 0;
+            SalaryPlusBonusEmployee sPlusEmployee = new SalaryPlusBonusEmployee
+                    (bonus,salary,num,lName,fName,dept);
+            sPlusEmployee.seteBonus(salary*.05);
 
-            // Create a SalariedEmployee object
-            SalariedEmployee sEmployee = new SalariedEmployee(salary, num, lName,
-                    fName, dept);
-
-            // Display Employee/SalariedEmployee information
+            // Display Employee/SalariedEmployee/SalaryPlusBonusEmployee information
             System.out.println("\n\n\n\n");
             System.out.println("******Employee Information******");
-            System.out.println(sEmployee);
+            System.out.println(sPlusEmployee);
         } else {
             // Get the Hourly employee information
             System.out.println("Employee Hourly Rate: ");
