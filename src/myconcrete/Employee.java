@@ -6,14 +6,14 @@ package myconcrete;
 public class Employee {
 
     // Employee Class fields 
-    private int eNum;           // Employee number
+    private String eNum;           // Employee number
     private String eLastName;   // Employee last name 
     private String eFirstName;  // Employee first name
     private String eDept;       // Employee department
-    
+
     // Constructor: Accepts as arguments the employee's number, last name, first
     // name, and department.
-    public Employee(int num, String lName, String fName, String dept) {
+    public Employee(String num, String lName, String fName, String dept) {
         this.eNum = num;
         this.eLastName = lName;
         this.eFirstName = fName;
@@ -36,13 +36,13 @@ public class Employee {
         // Return the string.
         return employee;
     }
-
+ 
 // Accessor & Mutator Methods: 
-    public int geteNum() {
+    public String geteNum() {
         return eNum;
     }
 
-    public void seteNum(int eNum) {
+    public void seteNum(String eNum) {
         this.eNum = eNum;
     }
 
@@ -70,4 +70,3 @@ public class Employee {
         this.eDept = eDept;
     }
 }
-
