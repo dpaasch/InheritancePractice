@@ -45,6 +45,5 @@ public class SalaryPlusBonusEmployee extends SalariedEmployee {
     public void seteBonus(double eBonus) {
         this.eBonus = eBonus;
     }
-   
     
 }
