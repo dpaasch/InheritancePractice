@@ -54,14 +54,14 @@ public class Startup {
             System.out.println("Employee Hourly Rate: ");
             double rate = input.nextDouble();
 
-//            // Create a SalariedEmployee object
-//            HourlyEmployee hEmployee = new HourlyEmployee(rate, num, lName,
-//                    fName, dept);
-//
-//            // Display Employee/HourlyEmployee information
-//            System.out.println("\n\n\n\n");
-//            System.out.println("******Employee Information******");
-//            System.out.println(hEmployee);
+            // Create an HourlyEmployee object
+            HourlyEmployee hEmployee = new HourlyEmployee(rate, num, lName,
+                    fName, dept);
+
+            // Display Employee/HourlyEmployee information
+            System.out.println("\n\n\n\n");
+            System.out.println("******Employee Information******");
+            System.out.println(hEmployee);
         }
     }
 }

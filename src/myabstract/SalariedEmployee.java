@@ -19,7 +19,7 @@ public class SalariedEmployee extends Employee {
         // Set the eSalary field.
         this.eSalary = salary;
     }
-    
+
     // no-arg constructor
     public SalariedEmployee(String num, String lName, String fName, String dept) {
         super(num, lName, fName, dept);
@@ -33,12 +33,12 @@ public class SalariedEmployee extends Employee {
         DecimalFormat dollar = new DecimalFormat("###,##0.00");
 
         String salariedEmployee;
-        salariedEmployee = super.toString() 
-         + "\n  Salaried Employee Annual Salary: $" + dollar.format(eSalary);
+        salariedEmployee = super.toString()
+                + "\n  Salaried Employee Annual Salary: $" + dollar.format(eSalary);
         // Return the string.
         return salariedEmployee;
     }
-    
+
     // Accessor & Mutator Methods
     public double geteSalary() {
         return eSalary;
@@ -47,5 +47,4 @@ public class SalariedEmployee extends Employee {
     public void seteSalary(double eSalary) {
         this.eSalary = eSalary;
     }
-    
 }

@@ -50,7 +50,7 @@ public class Startup {
             System.out.println("Employee Hourly Rate: ");
             double rate = input.nextDouble();
 
-            // Create a SalariedEmployee object
+            // Create an HourlyEmployee object
             HourlyEmployee hEmployee = new HourlyEmployee(rate, num, lName,
                     fName, dept);
 

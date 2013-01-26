@@ -4,7 +4,7 @@
 package myabstract;
 
 public abstract class Employee {
-    
+
     // Employee Class fields 
     private String eNum;        // Employee number
     private String eLastName;   // Employee last name 
@@ -36,6 +36,4 @@ public abstract class Employee {
         // Return the string.
         return employee;
     }
-    
-    
 }
