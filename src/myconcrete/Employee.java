@@ -6,7 +6,7 @@ package myconcrete;
 public class Employee {
 
     // Employee Class fields 
-    private String eNum;           // Employee number
+    private String eNum;        // Employee number
     private String eLastName;   // Employee last name 
     private String eFirstName;  // Employee first name
     private String eDept;       // Employee department
