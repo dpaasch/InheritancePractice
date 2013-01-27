@@ -39,6 +39,17 @@ public class SalariedEmployee extends Employee {
         return salariedEmployee;
     }
 
+    // Method added due to the abstract package requirement for one abstract method 
+    public double computePay() {
+
+        // Create a DecimalFormat object to better display the salary
+        DecimalFormat dollar = new DecimalFormat("###,##0.00");
+
+        double s = eSalary / 52;
+        System.out.println("  Salaried Employee Weekly Salary: $" + dollar.format(s));
+        return s;
+    }
+
     // Accessor & Mutator Methods
     public double geteSalary() {
         return eSalary;

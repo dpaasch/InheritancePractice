@@ -40,6 +40,12 @@ public class HourlyEmployee extends Employee {
         return hourlyEmployee;
     }
 
+    // Method added due to the abstract package requirement for one abstract method 
+    @Override
+    public double computePay() {
+        return eHourlyRate;
+    }
+
     // Accessor/Mutator Methods
     public double geteHourlyRate() {
         return eHourlyRate;

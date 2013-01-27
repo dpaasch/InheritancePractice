@@ -55,4 +55,7 @@ public abstract class Employee {
         }
         return status;
     }
+        
+    // Method added due to the abstract package requirement for one abstract method 
+    public abstract double computePay();
 }
