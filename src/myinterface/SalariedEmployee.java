@@ -6,8 +6,7 @@ package myinterface;
 import java.text.DecimalFormat;
 
 public class SalariedEmployee implements Employee {
-
-    private static SalariedEmployee sEmployee = new SalariedEmployee();
+    
     // SalariedEmployee class fields
     private String eNum;        // Employee number in the format XXX-L
     private String eLastName;   // Employee last name 
