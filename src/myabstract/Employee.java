@@ -6,7 +6,7 @@ package myabstract;
 public abstract class Employee {
 
     // Employee Class fields 
-    private String eNum;        // Employee number
+    private String eNum;        // Employee number in the format XXX-L
     private String eLastName;   // Employee last name 
     private String eFirstName;  // Employee first name
     private String eDept;       // Employee department
@@ -35,5 +35,24 @@ public abstract class Employee {
                 + "\n Employee Department: \t" + eDept;
         // Return the string.
         return employee;
+    }
+    
+    // Method: validateENum() validates employee number
+    public static boolean validateENum(String num) {
+        boolean status = true;
+        if(num.length() != 5 ) {
+            status = false;
+        } else if 
+               (Character.isDigit(num.charAt(0))
+            && (Character.isDigit(num.charAt(1)) 
+            && (Character.isDigit(num.charAt(2)) 
+            && (num.charAt(3) == '-') 
+            && ((Character.isLetter(num.charAt(4))))
+            && (num.charAt(4) >= 'A' && num.charAt(4) <= 'Z')))){            
+            status = true;
+        } else {
+            status = false;
+        }
+        return status;
     }
 }

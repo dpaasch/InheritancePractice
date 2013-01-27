@@ -12,10 +12,13 @@ public class Startup {
         // Create a Scanner object for keyboard input.
         Scanner input = new Scanner(System.in);
 
-        // Get the emmployee number
-        System.out.println("Enter the employee number in the format of XX");
-        System.out.println("Employee Number: ");
-        String num = input.nextLine();
+        // Get the employee number and validate it
+        System.out.println("Enter the employee number in the format of XXX-L");
+        String num;
+        do {
+            System.out.println("Employee Number: ");
+        num = input.nextLine();
+        } while (!Employee.validateENum(num));
 
         // Get the employee last name, first name
         System.out.println("Employee Last Name: ");

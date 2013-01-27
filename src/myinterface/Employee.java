@@ -21,5 +21,8 @@ public interface Employee {
     public String geteDept();
     
     public void seteDept(String eDept);
+    
+    // Method: validateENum() validates employee number    
+    public boolean validateENum(String num);   
 
 }
