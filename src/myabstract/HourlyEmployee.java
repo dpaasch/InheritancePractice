@@ -40,6 +40,24 @@ public class HourlyEmployee extends Employee {
         return hourlyEmployee;
     }
 
+     // Method: validateENum() validates employee number
+    public static boolean validateENum(String num) {
+        boolean status = true;
+        if (num.length() != 5) {
+            status = false;
+        } else if (Character.isDigit(num.charAt(0))
+                && (Character.isDigit(num.charAt(1))
+                && (Character.isDigit(num.charAt(2))
+                && (num.charAt(3) == '-')
+                && ((Character.isLetter(num.charAt(4))))
+                && (num.charAt(4) >= 'A' && num.charAt(4) <= 'Z')))) {
+            status = true;
+        } else {
+            status = false;
+        }
+        return status;
+    }
+    
     // Method added due to the abstract package requirement for one abstract method 
     @Override
     public double computePay() {
